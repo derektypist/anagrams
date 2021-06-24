@@ -1,0 +1,11 @@
+/* Body */
+body {
+    font-family: "Roboto", Arial, Verdana, sans-serif;
+}
+
+/* Words Information */
+#wordsinfo {
+    font-size: 1.4rem;
+    padding: 10px;
+    color: #009B77;
+}
