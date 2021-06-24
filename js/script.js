@@ -18,6 +18,17 @@ function getWordsInfo() {
         }
     } else {
         // Display Entered Words
-        
+        txt += `Your Inputs <br>`;
+        txt += `First Word is ${firstWord} <br>`;
+        txt += `Second Word is ${secondWord} <br>`;
+        // Check if the first word is an anagram of the second word
+        if (isAnagram(firstWord,secondWord)) {
+            txt += `${firstWord} is an anagram of ${secondWord}`;
+        } else {
+            txt += `${firstWord} is not an anagram of ${secondWord}`;
+        }
     }
+
+    // Display Information in the Browser
+    document.getTlementById("wordsinfo").innerHTML = txt;
 }
