@@ -31,3 +31,34 @@ As a user, if I submit the words Ash and has, I expect Ash to be an anagram of h
 
 As a user, if I submit words of unequal length (e.g. torch has length of 5 and par has length of 3), I expect that the first word is not an anagram of the second word.
 
+As a user, when I click on the Reset Button, I expect the information to be clear.
+
+### Information Architecture
+
+The two words are strings.  The function `isAnagram` takes two parameters, `word1` and `word2`.  It returns `true` or `false`.  If the length of `word1` is not the same as `word2`, return false.  If the length of the first word is equal to the length of the second word, each word is converted to lower case.  Each word is sorted into alphabetical order, (e.g. lime is eilm).  If the sorted words are identical, it returns true.
+
+## Features
+
+Form Validation.  Make sure that the first word is not the same as the second word, regardless of case.
+
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Bootstrap 5.0.2 and Google Fonts.
+
+## Testing
+
+Ensure that all user stories have been met.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/anagrams) at the main branch.
+
+## Credits
+
+### Content
+
+Written by myself.
+
+### Acknowledgements
+
+Dictionary (including Wikipedia) on an Apple Mac.
