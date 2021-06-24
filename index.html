@@ -27,7 +27,17 @@
                 <label for="secondword" class="form-label">Second Word (Required)</label>
                 <input class="form-control" placeholder="Enter second word (e.g. mile)" id="secondword" title="Enter second word (e.g. mile)">
             </div>
+
+            <!-- Set Up and Center Buttons -->
+            <button type="button" onClick="getWordsInfo()" class="btn btn-info">Submit</button>
+            <button type="reset" onClick="clearInfo()" class="btn btn-warning">Reset</button>
         </form>
+
+        <!-- Display Words Information -->
+        <p id="wordsinfo"></p>
+
+        <!-- Load Script -->
+        <script src="js/script.js"></script>
         
     </section>
     
