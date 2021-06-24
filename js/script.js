@@ -32,3 +32,25 @@ function getWordsInfo() {
     // Display Information in the Browser
     document.getTlementById("wordsinfo").innerHTML = txt;
 }
+
+/* 
+    Function to check if the first word (word1)
+    is an anagram of the second word (word2)
+*/
+function isAnagram(word1,word2) {
+    /* 
+        Check if the length of the first word is equal to the length of the second word.  If not, return false
+    */
+   if  (word1.length != word2.length) {
+       return false;
+   }
+
+   // Convert word1 and word2 to lower case
+   word1 = word1.toLowerCase();
+   word2 = word2.toLowerCase();
+
+   /*
+        Convert each string to an array, sort in alphabetical order and convert back to a string.  Check if the updated strings are the same.
+    */
+   return word1.split('').sort().join('') == word2.split('').sort().join();
+}
