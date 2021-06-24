@@ -54,3 +54,9 @@ function isAnagram(word1,word2) {
     */
    return word1.split('').sort().join('') == word2.split('').sort().join();
 }
+
+// Function to Clear Information
+function clearInfo() {
+    let txt="";
+    document.getElementById("wordsinfo").innerHTML = txt;
+}
