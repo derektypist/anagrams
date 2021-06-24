@@ -52,7 +52,7 @@ function isAnagram(word1,word2) {
    /*
         Convert each string to an array, sort in alphabetical order and convert back to a string.  Check if the updated strings are the same.
     */
-   return word1.split('').sort().join('') == word2.split('').sort().join();
+   return word1.split('').sort().join('') == word2.split('').sort().join('');
 }
 
 // Function to Clear Information
