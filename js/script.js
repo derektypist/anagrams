@@ -7,12 +7,15 @@ function getWordsInfo() {
     // Check if the words are valid
     if (firstWord.length === 0 || secondWord.length === 0 || (firstWord.length > 0 && secondWord.length >0 && firstWord.toLowerCase() == secondWord.toLowerCase())) {
         txt += `Invalid Input <br>`;
+        // Case for Blank First Word
         if (firstWord.length === 0) {
             txt += `The first word cannot be blank <br>`;
         }
+        // Case for Blank Second Word
         if (secondWord.length === 0) {
             txt += `The second word cannot be blank <br>`;
         }
+        // Case for The First Word being the same as the Second Word
         if (firstWord.length > 0 && secondWord.length > 0 && firstWord.toLowerCase() == secondWord.toLowerCase()) {
             txt += `The two words cannot be the same <br>`;
         }
