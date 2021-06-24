@@ -30,7 +30,7 @@ function getWordsInfo() {
     }
 
     // Display Information in the Browser
-    document.getTlementById("wordsinfo").innerHTML = txt;
+    document.getElementById("wordsinfo").innerHTML = txt;
 }
 
 /* 
